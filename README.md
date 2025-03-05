@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Reading Journal Rafaela Haeser - fase 1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição do Projeto
+O **Reading Journal** é uma aplicação React que permite aos usuários cadastrar, ver em lista e excluir "livros". Este projeto foi desenvolvido como parte da **Fase 1** do curso.
 
-## Available Scripts
+## Funcionalidades
+✅ Cadastro de livros com título, autor(a), gênero e data  
+✅ Validação de formulário com feedback visual  
+✅ Listagem de livros cadastrados  
+✅ Exclusão de livros com um botão de "Excluir"  
+✅ Navegação dinâmica entre Home, Lista de Livros e Cadastro
 
-In the project directory, you can run:
+## Componentes
+Os componentes estão no diretório ./src/components e possuem as seguintes características:
 
-### `npm start`
+## BookForm:
+addBook: função de callback que adiciona um novo livro à lista.
+O BookForm é responsável por exibir um formulário onde o usuário pode cadastrar novos livros. Ele inclui campos para Título, Autor, Gênero e Data, além de um botão para submeter o formulário.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Funcionalidades
+Captura os valores inseridos pelo usuário nos campos de input.
+Valida se todos os campos foram preenchidos antes de permitir o cadastro.
+Aplica um feedback visual caso algum campo esteja vazio.
+Chama a função addBook para adicionar o livro ao App.js.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## BookList:
+books: um array contendo os livros cadastrados.
+deleteBook: função de callback que remove um livro da lista.
+O BookList exibe uma lista de livros cadastrados. Caso não haja nenhum livro, exibe a mensagem "Nenhum livro cadastrado.".
 
-### `npm test`
+Funcionalidades
+Lista dinamicamente todos os livros cadastrados.
+Mostra Título, Autor, Gênero e Data de cada livro.
+Inclui um botão "Excluir" ao lado de cada livro, permitindo a exclusão do item da lista.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## NavBar:
+setActiveComponent: função que define qual componente deve ser exibido na tela.
+NavBar funciona como um menu de navegação da aplicação, permitindo alternar entre as páginas de Home, Lista de Livros e Cadastro.
 
-### `npm run build`
+Funcionalidades
+Utiliza botões para definir o estado ativo da aplicação.
+Permite alternar dinamicamente entre os componentes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Conclusão:
+Este projeto foi desenvolvido para demonstrar o uso de ReactJS, incluindo componentização, estados (useState), manipulação de eventos (onClick, onChange, onSubmit) e passagem de props.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Futuras melhorias:
 
-### `npm run eject`
+Implementar uma funcionalidade de edição de livros.
+Melhorar o design utilizando CSS ou Bootstrap.
+Adicionar armazenamento local para manter os livros salvos ao recarregar a página.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Para executar este projeto:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Entre pasta context-react-project no terminal:
+cd exemplos/context-react-project
+Rode npm install para instalar as dependências do projeto:
+npm install
+E em seguida, npm start, para iniciar a execução do projeto.
+npm start
+Após execução do projeto, este é o resultado esperado no navegador: Gif mostrando o resultado esperado ao rodar este projeto
