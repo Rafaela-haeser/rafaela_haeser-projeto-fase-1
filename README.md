@@ -51,12 +51,26 @@ Implementar uma funcionalidade de edição de livros.
 Melhorar o design utilizando CSS ou Bootstrap.
 Adicionar armazenamento local para manter os livros salvos ao recarregar a página.
 
-Para executar este projeto:
+## PARA EXECUTAR O PROJETO:
 
-Entre pasta context-react-project no terminal:
-cd exemplos/context-react-project
-Rode npm install para instalar as dependências do projeto:
+1️⃣ Abra o terminal e entre na pasta do projeto:
+cd rafaela_haeser-projeto-fase-1
+
+2️⃣ Instale as dependências:
 npm install
-E em seguida, npm start, para iniciar a execução do projeto.
+
+3️⃣ Execute o projeto:
 npm start
-Após execução do projeto, este é o resultado esperado no navegador: Gif mostrando o resultado esperado ao rodar este projeto
+
+O projeto será iniciado automaticamente no navegador em http://localhost:3000.
+
+Aqui estão algumas capturas de tela mostrando o funcionamento do projeto:
+
+Tela Inicial (Home)
+![Home](prints/home.png)
+
+Lista de Livros
+![Lista de Livros](prints/booklist.png)
+
+Cadastro de Livro
+![Cadastro](prints/bookform.png)
